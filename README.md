@@ -1,4 +1,4 @@
-# Project Title
+# MultiSelectModal | NextUI
 
 This project is a Next.js application with a focus on a `MultiSelectModal` component.
 
