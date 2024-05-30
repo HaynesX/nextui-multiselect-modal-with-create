@@ -44,6 +44,14 @@ const MultiSelectModal: React.FC<MultiSelectModalProps> = ({
     const showDivider = allowCreate && filteredItems.length > 0 && trimmedSearchValue !== "" && !items.some(item => item.name.toLowerCase() === trimmedSearchValue)
     const showCreateNew = allowCreate && !items.map(item => item.name.toLowerCase()).includes(searchValue.toLowerCase()) && searchValue.trim() !== ""
 
+    const inputRef = React.useRef<HTMLInputElement>(null)
+
+    useEffect(() => {
+        if (isOpen) {
+            inputRef.current?.focus()
+        }
+    }, [isOpen])
+
 
 
     useEffect(() => {
@@ -76,6 +84,8 @@ const MultiSelectModal: React.FC<MultiSelectModalProps> = ({
             setPreviousSearchValue(searchValue);
         }, [searchValue, items]);
 
+        
+
 
 
 
@@ -99,7 +109,7 @@ const MultiSelectModal: React.FC<MultiSelectModalProps> = ({
                                 onValueChange={setSearchValue}
                                 className='mb-1'
                                 placeholder={searchPlaceholder}
-                                autoFocus
+                                ref={inputRef}
                                 labelPlacement='inside'
                                 size="lg"
                                 variant="underlined"
@@ -143,7 +153,7 @@ const MultiSelectModal: React.FC<MultiSelectModalProps> = ({
                                                loadingIcon
                                             ) : null}
                                         >
-                                            <p className='font-normal ml-1'>{createText} <span className='font-normal text-default-500'>"{searchValue.trim()}"</span></p>
+                                            <p className='font-normal ml-1'>{createText} <span className='font-normal text-default-500'>&quot;{searchValue.trim()}&quot;</span></p>
                                         </ListboxItem>
                                     </Listbox>
                                 )}

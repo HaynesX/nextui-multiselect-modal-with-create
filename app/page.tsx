@@ -89,7 +89,9 @@ export default function Home() {
         </h2>
         <h3 className="">By Brandon H</h3>
         <div className="flex flex-row gap-2 mt-4 mb-8 items-center justify-center">
-          <Button className="" variant="flat" size="sm">
+          <Button onPress={
+            () => window.open('https://github.com/HaynesX/nextui-multiselect-modal-with-create', '_blank')
+          } className="" variant="flat" size="sm">
             Visit Github
           </Button>
           <ThemeSwitch />
