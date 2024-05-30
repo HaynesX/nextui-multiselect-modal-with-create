@@ -25,7 +25,7 @@ To run this project locally, follow these steps:
    npm run dev
    ```
 
-## Live Demo Website: 
+## Live Demo Website: [text](https://nextui-multiselect-modal-with-create.vercel.app/)
 
 ## Key Files
 
