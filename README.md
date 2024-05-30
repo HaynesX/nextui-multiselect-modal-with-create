@@ -2,6 +2,12 @@
 
 This project is a Next.js application with a focus on a `MultiSelectModal` component.
 
+
+
+https://github.com/HaynesX/nextui-multiselect-modal-with-create/assets/99973461/a7ba6a84-d177-492e-931f-36ccf5471828
+
+
+
 ## Getting Started
 
 To run this project locally, follow these steps:
