@@ -9,8 +9,8 @@ To run this project locally, follow these steps:
 1. **Clone the repository:**
 
    ```bash
-   git clone <repository-url>
-   cd <repository-directory>
+   git clone https://github.com/HaynesX/nextui-multiselect-modal-with-create.git
+   cd nextui-multiselect-modal-with-create
    ```
 
 2. **Install dependencies:**
